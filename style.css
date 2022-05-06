@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  background: url(https://images.alphacoders.com/541/thumb-1920-541445.jpg);
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #1c87c9;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100vh;
+  padding-right: 15rem;
+}
+
+form {
+  width: 20%;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+:is(input, select, textarea) {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #9b9898;
+  outline: none;
+  margin-top: 5px;
+}
+
+:is(input, select, textarea)::placeholder {
+  color: #666;
+}
+
+select {
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+a,
+.submit {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background: #1c87c9;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover,
+.submit:hover {
+  background: #2371a0;
+}
+
+.error {
+  color: red;
+  text-align: end;
+}
+
+.labels {
+  font-size: 2ch;
+}
+
+.btn {
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 0.5rem;
+}
